@@ -1,0 +1,19 @@
+[package]
+name = "dedup-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+walkdir = "2.3"
+sha2 = "0.10"
+blake3 = "1.5"
+rayon = "1.8"
+anyhow = "1.0"
+indicatif = "0.17"
+humansize = "2.1"
+colored = "2.1"
+
+[[bin]]
+name = "dedup"
+path = "src/main.rs"

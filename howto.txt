@@ -1,0 +1,14 @@
+# Basic scan of current directory
+cargo run
+
+# Scan specific directory with verbose output
+cargo run -- /path/to/scan --verbose
+
+# Find duplicates larger than 1MB using SHA-256
+cargo run -- /path/to/scan --min-size 1048576 --algorithm sha256
+
+# Dry run to see what would be deleted
+cargo run -- /path/to/scan --dry-run
+
+# Actually delete duplicates (keeps first occurrence)
+cargo run -- /path/to/scan --delete
